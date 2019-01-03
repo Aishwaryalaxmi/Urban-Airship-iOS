@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   AirshipConfig.plist
-   Push Notification Demo
-
-   Created by Aishwarya on 28/12/18.
-   Copyright (c) 2018 Aishwarya. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
-    
+        <key>developmentAppKey</key>
+        <string>Your Development App Key</string>
+        <key>developmentAppSecret</key>
+        <string>Your Development App Secret</string>
+        <key>productionAppKey</key>
+        <string>Your Production App Key</string>
+        <key>productionAppSecret</key>
+        <string>Your Production App Secret</string>
+        <key>useWKWebView</key>
+        <true/>
     </dict>
 </plist>

@@ -14,6 +14,7 @@
 		2FB74E5521D55DDD0086E92B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB74E5321D55DDD0086E92B /* LaunchScreen.storyboard */; };
 		2FB74E6021D55DDD0086E92B /* Push_Notification_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB74E5F21D55DDD0086E92B /* Push_Notification_DemoTests.swift */; };
 		2FB74E6B21D55DDD0086E92B /* Push_Notification_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB74E6A21D55DDD0086E92B /* Push_Notification_DemoUITests.swift */; };
+		2FDD1C7321DE7C65001EEB06 /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FDD1C7221DE7C65001EEB06 /* AirshipConfig.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2FB74E6621D55DDD0086E92B /* Push Notification DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Push Notification DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB74E6A21D55DDD0086E92B /* Push_Notification_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Push_Notification_DemoUITests.swift; sourceTree = "<group>"; };
 		2FB74E6C21D55DDD0086E92B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FDD1C7221DE7C65001EEB06 /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		2FB74E4921D55DDC0086E92B /* Push Notification Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2FDD1C7221DE7C65001EEB06 /* AirshipConfig.plist */,
 				2FB74E4A21D55DDC0086E92B /* AppDelegate.swift */,
 				2FB74E4C21D55DDC0086E92B /* ViewController.swift */,
 				2FB74E4E21D55DDC0086E92B /* Main.storyboard */,
@@ -193,6 +196,11 @@
 				TargetAttributes = {
 					2FB74E4621D55DDC0086E92B = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					2FB74E5A21D55DDD0086E92B = {
 						CreatedOnToolsVersion = 10.1;
@@ -232,6 +240,7 @@
 				2FB74E5521D55DDD0086E92B /* LaunchScreen.storyboard in Resources */,
 				2FB74E5221D55DDD0086E92B /* Assets.xcassets in Resources */,
 				2FB74E5021D55DDC0086E92B /* Main.storyboard in Resources */,
+				2FDD1C7321DE7C65001EEB06 /* AirshipConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +441,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Push Notification Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +451,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Aishwarya.Push-Notification-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,7 +461,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Push Notification Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Aishwarya.Push-Notification-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
