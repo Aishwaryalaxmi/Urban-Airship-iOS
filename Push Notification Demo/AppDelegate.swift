@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AirshipKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UAirship.takeOff()
+        UAirship.push()?.userPushNotificationsEnabled = true
+        UAirship.push()?.defaultPresentationOptions = [.alert,.badge,.sound]
+        UAirship.push()?.isAutobadgeEnabled = true
+        UAirship.push()?.tags = ["One"]
         return true
     }
 

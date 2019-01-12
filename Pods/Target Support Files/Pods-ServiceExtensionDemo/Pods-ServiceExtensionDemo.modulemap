@@ -1,0 +1,6 @@
+framework module Pods_ServiceExtensionDemo {
+  umbrella header "Pods-ServiceExtensionDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
